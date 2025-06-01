@@ -26,11 +26,6 @@ public class WorkflowTopicsProps {
         return path;
     }
 
-    public Path getWorkflowCompleteFilePath(String jobId) {
-        Path path = tempDirectoryAllProjects.resolve(jobId).resolve(jobId + Globals.WORKFLOW_COMPLETE_FILE_NAME_EXTENSION);
-        return path;
-    }
-
     public Path getOriginalTextInputFilePath(String jobId) {
         Path path = tempDirectoryAllProjects.resolve(jobId).resolve(jobId);
         return path;

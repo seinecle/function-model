@@ -31,4 +31,9 @@ public class Globals {
         return pathOfTopNodesData;
     }
 
+    public Path getWorkflowCompleteFilePath(String jobId) {
+        Path path = tempDirectoryAllProjects.resolve(jobId).resolve(jobId + WORKFLOW_COMPLETE_FILE_NAME_EXTENSION);
+        return path;
+    }
+
 }

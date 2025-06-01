@@ -32,11 +32,6 @@ public class WorkflowGazeProps {
         return pathOfGexf;
     }
 
-    public Path getWorkflowCompleteFilePath(String jobId) {
-        Path path = tempDirectoryAllProjects.resolve(jobId).resolve(jobId + Globals.WORKFLOW_COMPLETE_FILE_NAME_EXTENSION);
-        return path;
-    }
-
     public enum QueryParams {
         MIN_SHARED_TARGETS
     }
