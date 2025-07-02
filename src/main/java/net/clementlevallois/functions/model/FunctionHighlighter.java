@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package net.clementlevallois.functions.model;
 
 /**
@@ -10,6 +6,6 @@ package net.clementlevallois.functions.model;
  */
 public class FunctionHighlighter {
 
-    public static final String NAME = "highlighter";
+    public static final String NAME = Globals.Names.CSS_HIGHLIGHTER.getDescription();
 
 }

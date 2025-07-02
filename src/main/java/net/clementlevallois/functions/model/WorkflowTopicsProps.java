@@ -8,7 +8,7 @@ import java.nio.file.Path;
  */
 public class WorkflowTopicsProps {
 
-    public static final String NAME = "workflow-topics";
+    public static final String NAME = Globals.Names.TOPICS.getDescription();
     public static final String ENDPOINT = "workflow/topics";
     private final Path tempDirectoryAllProjects;
 

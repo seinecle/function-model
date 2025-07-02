@@ -11,7 +11,15 @@ package net.clementlevallois.functions.model;
  */
 public class FunctionPdfMatcher {
 
-    public static final String NAME = "pdfmatcher";
+    public static final String NAME = Globals.Names.PDF_MATCHER.getDescription();
     public static final String ENDPOINT = "pdfmatcher";
+    
+    public enum QueryParams{
+        START_OF_PAGE, END_OF_PAGE, TYPE_OF_CONTEXT, CASE_SENSITIVE, SEARCHED_TERM, FILE_NAME, NB_WORDS, NB_LINES
+    }
+
+    public enum BodyParams{
+        LINES, PAGES
+    }
 
 }

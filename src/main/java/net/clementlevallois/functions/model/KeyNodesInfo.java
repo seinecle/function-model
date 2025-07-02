@@ -17,7 +17,7 @@ import java.util.TreeMap;
  */
 public class KeyNodesInfo {
 
-    public static final String KEY_NODES_FILE_NAME_EXTENSION = "key_nodes";
+    public static final String NAME = Globals.Names.KEY_NODES.getDescription();
     public static final String KEY_NODES_SAMPLE_FILE_EXTENSION = ".json";
 
     private final Map<String, String> nodeIdsAndLabels = new HashMap();
@@ -67,7 +67,7 @@ public class KeyNodesInfo {
         });
         return builder.build();
     }
-    
+
     public JsonObject toJsonForInsights() {
         JsonObjectBuilder builder = Json.createObjectBuilder();
         insights.forEach((community, communityInsights) -> {

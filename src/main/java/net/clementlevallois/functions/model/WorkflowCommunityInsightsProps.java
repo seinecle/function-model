@@ -10,7 +10,7 @@ package net.clementlevallois.functions.model;
  */
 public class WorkflowCommunityInsightsProps {
     
-    public static final String NAME = "workflow-community-insights";
+    public static final String NAME = Globals.Names.COMMUNITY_INSIGHTS.getDescription();
     public static final String ENDPOINT = "workflow/community-insights";
 
     public static final String CONTEXT_FROM_SAMPLE_FILE_NAME_EXTENSION = "context_sample";

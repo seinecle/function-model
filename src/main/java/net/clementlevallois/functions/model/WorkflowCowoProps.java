@@ -8,7 +8,7 @@ import java.nio.file.Path;
  */
 public class WorkflowCowoProps {
 
-    public static final String NAME = "workflow-cowo";
+    public static final String NAME = Globals.Names.COWO.getDescription();
     public static final String ENDPOINT = "workflow/cowo";
     public static boolean IS_PMI_ENABLED = false;
     private final Path tempDirectoryAllProjects;
