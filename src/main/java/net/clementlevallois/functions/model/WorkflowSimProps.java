@@ -33,9 +33,4 @@ public class WorkflowSimProps {
     public enum QueryParams {
         MIN_SHARED_TARGETS, SOURCE_COL_INDEX
     }
-
-    public enum BodyJsonKeys {
-        LINES
-    }
-
 }

@@ -16,6 +16,7 @@ public class Globals {
     public static final String TOP_FILE_NAME_EXTENSION = "_topnodes";
     public static final String GEXF_FILE_EXTENSION = ".gexf";
     public static final String DATA_SHEET_FILE_EXTENSION = ".sheet";
+    public static final String JSON_ARRAY_FILE_EXTENSION = ".jsonArray";
     public static final String RESULTS_PAGE = "results.xhtml";
     public static final String PNG_EXTENSION = ".png";
     public static final String FACES_REDIRECT = "?faces-redirect=true";
@@ -94,8 +95,8 @@ public class Globals {
         return pathOfPngFile;
     }
 
-    public Path getDataSheetPath(String jobId, String fileUniqueId) {
-        Path pathOfDataSheetFile = tempDirectoryAllProjects.resolve(jobId).resolve(fileUniqueId + DATA_SHEET_FILE_EXTENSION);
+    public Path getDataSheetPath(String jobId) {
+        Path pathOfDataSheetFile = tempDirectoryAllProjects.resolve(jobId).resolve(jobId + DATA_SHEET_FILE_EXTENSION);
         return pathOfDataSheetFile;
     }
 
