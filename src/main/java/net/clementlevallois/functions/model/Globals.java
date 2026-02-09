@@ -55,7 +55,8 @@ public class Globals {
         KEY_NODES("key-nodes"),
         TEXT_PER_COMMUNITY("text-per-community"),
         TOP_NODES("top-nodes"),
-        CSS_HIGHLIGHTER("css-highlighter");
+        CSS_HIGHLIGHTER("css-highlighter"),
+        NER_GRAPH("ner-graph");
 
         private final String description;
 
