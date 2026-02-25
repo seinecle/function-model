@@ -25,8 +25,8 @@ public class WorkflowNerGraphProps {
     public enum QueryParams {
         LANG,
         ENTITY_TYPES,
-        RELATION_CATEGORIES,
-        PROMPT_MODIFIERS,
-        STRIP_BIBLIOGRAPHY
+        SELECTED_RELATIONS,
+        STRIP_BIBLIOGRAPHY,
+        REMOVE_ISOLATED_NODES
     }
 }

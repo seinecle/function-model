@@ -1,24 +1,19 @@
 package net.clementlevallois.functions.model;
 
+import java.util.List;
+
 /**
  * Document profile detected by auto-profiling or set by the user.
- * Describes the nature of the documents being analyzed along 4 dimensions.
  *
- * @param contentType   "FACTUAL" | "OPINIONS" | "MIXED"
- * @param hasControversy whether the content contains opposing sides or disputes
- * @param actorFocus    "PEOPLE" | "ORGANIZATIONS" | "BOTH"
- * @param isAcademic    whether the content is academic/scientific (triggers bibliography stripping)
+ * @param actorFocus          "PEOPLE" | "ORGANIZATIONS" | "BOTH"
+ * @param isAcademic          whether the content is academic/scientific (drives stripBibliography default)
+ * @param suggestedCategories relation category names suggested by auto-profiling (e.g. "FAMILY", "PROFESSIONAL")
  */
 public record AnalysisProfile(
-        String contentType,
-        boolean hasControversy,
         String actorFocus,
-        boolean isAcademic
+        boolean isAcademic,
+        List<String> suggestedCategories
 ) {
-    public static final String FACTUAL = "FACTUAL";
-    public static final String OPINIONS = "OPINIONS";
-    public static final String MIXED = "MIXED";
-
     public static final String PEOPLE = "PEOPLE";
     public static final String ORGANIZATIONS = "ORGANIZATIONS";
     public static final String BOTH = "BOTH";
